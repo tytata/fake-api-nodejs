@@ -12,8 +12,23 @@
       "PUT",
       "PATCH",
       "DELETE"
+    ],
+    "primaryClassNotications":[
+
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "enrollClass":[
+
+      "GET",
+      "PUT",
+      "PATCH",
+      "DELETE"
     ]
   },
+
   "users": [
     {
       "id": 1,
@@ -24,7 +39,7 @@
       "password": "admin",
       "avatar": "https://robohash.org/eaquequasincidunt.png?size=50x50&set=set1",
       "gender": "Genderfluid",
-      "phone": "933-658-1213",
+      "phone": "0856953859",
       "birthday": "1994-03-23",
       "status": true,
       "createdAt": 1609483221000,
@@ -44,126 +59,6 @@
       "status": false,
       "createdAt": 1617440961000,
       "modifiedAt": 1618301961000
-    },
-    {
-      "id": 3,
-      "firstName": "Kizzie",
-      "lastName": "Shama",
-      "username": "kshama2",
-      "email": "kshama2@prlog.org",
-      "password": "kjU6qK1Bm",
-      "avatar": "https://robohash.org/voluptatemdebitiset.png?size=50x50&set=set1",
-      "gender": "Male",
-      "phone": "676-983-4977",
-      "birthday": "1997-09-29",
-      "status": false,
-      "createdAt": 1615745961000,
-      "modifiedAt": 1615976361000
-    },
-    {
-      "id": 4,
-      "firstName": "Tremayne",
-      "lastName": "Americi",
-      "username": "tamerici3",
-      "email": "tamerici3@skype.com",
-      "password": "xbNRPGk",
-      "avatar": "https://robohash.org/rerumoccaecatiprovident.png?size=50x50&set=set1",
-      "gender": "Genderfluid",
-      "phone": "548-721-4661",
-      "birthday": "2004-10-01",
-      "status": false,
-      "createdAt": 1610281342000,
-      "modifiedAt": 1619283693000
-    },
-    {
-      "id": 5,
-      "firstName": "Luciana",
-      "lastName": "Fernihough",
-      "username": "lfernihough4",
-      "email": "lfernihough4@oaic.gov.au",
-      "password": "hDuqo8j5TXTl",
-      "avatar": "https://robohash.org/nobisplaceataut.png?size=50x50&set=set1",
-      "gender": "Female",
-      "phone": "597-670-2841",
-      "birthday": "1999-01-30",
-      "status": true,
-      "createdAt": 1614362898000,
-      "modifiedAt": 1615410795000
-    },
-    {
-      "id": 6,
-      "firstName": "Ursuline",
-      "lastName": "Gorrick",
-      "username": "ugorrick5",
-      "email": "ugorrick5@meetup.com",
-      "password": "GH1yLLmJoq",
-      "avatar": "https://robohash.org/voluptatemenimerror.png?size=50x50&set=set1",
-      "gender": "Bigender",
-      "phone": "686-821-0488",
-      "birthday": "1996-01-29",
-      "status": false,
-      "createdAt": 1621283400000,
-      "modifiedAt": 1621528590000
-    },
-    {
-      "id": 7,
-      "firstName": "Carlotta",
-      "lastName": "Chivers",
-      "username": "cchivers6",
-      "email": "cchivers6@ebay.com",
-      "password": "n5hIT4NKk8Q",
-      "avatar": "https://robohash.org/voluptatequasiest.png?size=50x50&set=set1",
-      "gender": "Non-binary",
-      "phone": "428-749-0095",
-      "birthday": "1998-05-19",
-      "status": true,
-      "createdAt": 1614957930000,
-      "modifiedAt": 1614957930000
-    },
-    {
-      "id": 8,
-      "firstName": "Thorpe",
-      "lastName": "Humblestone",
-      "username": "thumblestone7",
-      "email": "thumblestone7@china.com.cn",
-      "password": "iYlKMYJqIy2T",
-      "avatar": "https://robohash.org/voluptasetexplicabo.png?size=50x50&set=set1",
-      "gender": "Bigender",
-      "phone": "722-376-2905",
-      "birthday": "2007-09-24",
-      "status": true,
-      "createdAt": 1613665586000,
-      "modifiedAt": 1613665586000
-    },
-    {
-      "id": 9,
-      "firstName": "Chick",
-      "lastName": "Kynnd",
-      "username": "ckynnd8",
-      "email": "ckynnd8@spotify.com",
-      "password": "cGdnd1HapM",
-      "avatar": "https://robohash.org/commodiexplicaboveritatis.png?size=50x50&set=set1",
-      "gender": "Bigender",
-      "phone": "825-276-2045",
-      "birthday": "2007-03-01",
-      "status": true,
-      "createdAt": 1612782806000,
-      "modifiedAt": 1612782806000
-    },
-    {
-      "id": 10,
-      "firstName": "Alexis",
-      "lastName": "Loughan",
-      "username": "aloughan9",
-      "email": "aloughan9@soundcloud.com",
-      "password": "BUSPoSABA3s",
-      "avatar": "https://robohash.org/suntisteaperiam.png?size=50x50&set=set1",
-      "gender": "Polygender",
-      "phone": "391-273-2238",
-      "birthday": "2000-05-04",
-      "status": true,
-      "createdAt": 1615245193000,
-      "modifiedAt": 1616246055000
     }
   ],
   "products": [
@@ -186,86 +81,50 @@
       "status": false,
       "createdAt": 1615796160000,
       "modifiedAt": 1615796160000
-    },
+    }
+  ],
+  "primaryClassNotications": [
     {
-      "id": 3,
-      "name": "Nantucket - 518ml",
-      "price": 693,
-      "quantity": 41,
-      "thumbnail": "http://dummyimage.com/125x100.png/dddddd/000000",
-      "status": false,
-      "createdAt": 1614190320000,
-      "modifiedAt": 1614190320000
-    },
-    {
-      "id": 4,
-      "name": "Onions - White",
-      "price": 472,
-      "quantity": 67,
-      "thumbnail": "http://dummyimage.com/117x100.png/cc0000/ffffff",
-      "status": false,
-      "createdAt": 1609751340000,
-      "modifiedAt": 1617525900000
-    },
-    {
-      "id": 5,
-      "name": "Lamb - Whole, Fresh",
-      "price": 157,
-      "quantity": 83,
-      "thumbnail": "http://dummyimage.com/160x100.png/dddddd/000000",
+      "id": 1,
+      "title": "Lớp sơ cấp x ngày",
+      "description": "Trung Tâm Dưỡng Sinh thuộc Viện Nghiên Cứu & Ứng Dụng Tiềm Năng Con Người",
+      "description_on":"Ban Quản Lý Thiền Đường Nhất Tâm mở Lớp Thiền sơ cấp 1.22 online (trực tuyến) thông qua công cụ (ZOOM) vào ngày 16/02/2023 như sau:",
+      "numberOfLearning":3,
+      "timeStartOpening":1615146960000,
+      "timeEndOpening":1615146960000,
+      "openingDay":1615146960000,
+      "startLearningDay":34324324432432,
+      "endLearningDay":34324324432432,
+      "timeStartLearning":1615146960000,
+      "timeEndLearning":1615146960000,
+      "image":"adfaasdfasdfasdfasdfasdfasdf",
+      "alert": true,
       "status": true,
-      "createdAt": 1620154080000,
-      "modifiedAt": 1620154080000
-    },
-    {
-      "id": 6,
-      "name": "Carrots - Purple, Organic",
-      "price": 816,
-      "quantity": 37,
-      "thumbnail": "http://dummyimage.com/241x100.png/5fa2dd/ffffff",
-      "status": false,
-      "createdAt": 1619270940000,
-      "modifiedAt": 1619443380000
-    },
-    {
-      "id": 7,
-      "name": "Bag - Regular Kraft 20 Lb",
-      "price": 157,
-      "quantity": 60,
-      "thumbnail": "http://dummyimage.com/156x100.png/cc0000/ffffff",
-      "status": false,
-      "createdAt": 1614098400000,
-      "modifiedAt": "2021-04-16"
-    },
-    {
-      "id": 8,
-      "name": "Flour - Bran, Red",
-      "price": 970,
-      "quantity": 40,
-      "thumbnail": "http://dummyimage.com/157x100.png/5fa2dd/ffffff",
-      "status": false,
-      "createdAt": 1617954000000,
-      "modifiedAt": 1619964420000
-    },
-    {
-      "id": 9,
-      "name": "Bread - Bistro Sour",
-      "price": 112,
-      "quantity": 77,
-      "thumbnail": "http://dummyimage.com/147x100.png/dddddd/000000",
-      "status": false,
-      "createdAt": 1612357500000,
-      "modifiedAt": 1614956760000
-    },
-    {
-      "id": 10,
-      "name": "Soup - Campbells Bean Medley",
-      "price": 353,
-      "quantity": 40,
-      "thumbnail": "http://dummyimage.com/203x100.png/ff4444/ffffff",
-      "status": false,
+      "classType":1,
       "createdAt": 1615146960000,
       "modifiedAt": 1615146960000
+    }
+  ],
+  "enrollClass":[
+    {
+      "id":1,
+      "enrollId":1,
+      "classType":1,
+      "username":"afarncomb1",
+      "firstName":"Alberta",
+      "lastName":"Farncomb",
+      "middleName":"middle",
+      "birthday":"1994-03-23",
+      "address":"number 1, HCM city",
+      "gender":"Male",
+      "job":"CEO company national",
+      "phone":"933-658-1213",
+      "healthStatus":"normal",
+      "referenceUser":"Võ Thị Hương",
+      "referencePhone":"933-686-8899",
+      "portrait":"Q#WARESFD#@AEWSDA#@$#RWEA$#@RAWEFSWTAWERERAEWREWRAWERAEWRAW@$@#REAFAEWRAWEF#%$YTRGTY^U&*&*()O)_)_+)OIUJHGJKLKMN#V",
+      "isValid":false,
+      "isDeleted":false
     }
   ]
 }

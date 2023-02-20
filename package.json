@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robinhuy/fake-rest-api-nodejs.git"
+    "url": "git+https://github.com/tytata/fake-api-nodejs.git"
   },
   "keywords": [
     "json-server",
     "rest-api"
   ],
-  "author": "Robin Huy",
+  "author": "tytata",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robinhuy/fake-api-nodejs/issues"
+    "url": "https://github.com/tytata/fake-api-nodejs/issues"
   },
-  "homepage": "https://github.com/robinhuy/fake-api-nodejs#readme",
+  "homepage": "https://github.com/tytata/fake-api-nodejs#readme",
   "dependencies": {
     "express-graphql": "^0.12.0",
     "formidable": "^2.0.1",

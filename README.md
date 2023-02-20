@@ -23,7 +23,7 @@ Preview: [https://nodejs-fake-api.herokuapp.com](https://nodejs-fake-api.herokua
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/robinhuy/fake-api-nodejs.git
+git clone https://github.com/tytata/fake-api-nodejs.git
 ```
 
 or fork to your account and clone the forked repo
