@@ -120,8 +120,8 @@
       "job":"CEO company national",
       "phone":"933-658-1213",
       "healthStatus":"normal",
-      "referenceUser":"Võ Thị Hương",
-      "referencePhone":"933-686-8899",
+      "userReference":"Võ Thị Hương",
+      "PhoneReference":"933-686-8899",
       "portrait":"Q#WARESFD#@AEWSDA#@$#RWEA$#@RAWEFSWTAWERERAEWREWRAWERAEWRAW@$@#REAFAEWRAWEF#%$YTRGTY^U&*&*()O)_)_+)OIUJHGJKLKMN#V",
       "isValid":false,
       "isDeleted":false
