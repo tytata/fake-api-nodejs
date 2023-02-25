@@ -189,6 +189,31 @@ export const uploadFilesHandler = (req, res) => {
   });
 };
 
+export const getInforOpenCharkraHandler = (db, req, res) => {
+  const { coachId } = req.body;
+
+  // const enrollClass = db.data.enrollClass.find(
+  //   (e) => e.coachId === coachId // && u.password === pwd
+  // );
+  const listEnrollClass = db.data.enrollClass.filter(
+    (e) => e.coachId === coachId
+  );
+  if (listEnrollClass) {
+    // const accessToken = generateAccessToken(user.id);
+    // const refreshToken = generateRefreshToken(user.id);
+    // const { password, ...userWithoutPassword } = user;
+
+    // res.jsonp({
+    //   enrollClass,
+    // });
+    res.jsonp(listEnrollClass);
+  } else {
+    res
+      .status(400)
+      .jsonp({ message: "not found assigned User to Open charkra!" });
+  }
+};
+
 export const socketEmit = (io, req, res) => {
   io.emit("socket-emit", req.body);
   res.jsonp({ msg: "Message sent over websocket connection" });

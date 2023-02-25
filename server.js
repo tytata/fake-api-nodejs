@@ -15,6 +15,7 @@ import {
   socketEmit,
   uploadFileHandler,
   uploadFilesHandler,
+  getInforOpenCharkraHandler,
 } from "./src/rest.js";
 import socketHandler from "./src/socket-io.js";
 
@@ -86,6 +87,11 @@ app.post("/upload-file", uploadFileHandler);
 
 // Upload multiple files
 app.post("/upload-files", uploadFilesHandler);
+
+// List infor Open charkra request
+app.post("/info-open-charkra", (req, res) => {
+  getInforOpenCharkraHandler(db, req, res);
+});
 
 // Access control
 app.use((req, res, next) => {
