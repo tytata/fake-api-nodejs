@@ -195,10 +195,22 @@ export const getInforOpenCharkraHandler = (db, req, res) => {
   // const enrollClass = db.data.enrollClass.find(
   //   (e) => e.coachId === coachId // && u.password === pwd
   // );
+  // function myFunction(value, index, array) {
+  //   return value.coachId === coachId;
+  // }
   const listEnrollClass = db.data.enrollClass.filter(
     (e) => e.coachId === coachId
   );
-  if (listEnrollClass) {
+  // const listResult = db.data.enrollClass.filter(myFunction);
+
+  const myListResult = [];
+  db.data.enrollClass.forEach((element) => {
+    if (element.coachId === coachId) {
+      myListResult.push(element);
+    }
+  });
+
+  if (myListResult) {
     // const accessToken = generateAccessToken(user.id);
     // const refreshToken = generateRefreshToken(user.id);
     // const { password, ...userWithoutPassword } = user;
@@ -206,7 +218,28 @@ export const getInforOpenCharkraHandler = (db, req, res) => {
     // res.jsonp({
     //   enrollClass,
     // });
-    res.jsonp(listEnrollClass);
+    // res.jsonp(listEnrollClass);
+    // res.jsonp(listResult);
+    res.jsonp(myListResult);
+    // myListResult = null;
+  } else {
+    res
+      .status(400)
+      .jsonp({ message: "not found assigned User to Open charkra!" });
+  }
+};
+export const getOpeningClassInfoHandler = (db, req, res) => {
+  const { isCompleted } = req.body;
+
+  const myListResult = [];
+  db.data.openingClassInfor.forEach((element) => {
+    if (element.isCompleted === isCompleted) {
+      myListResult.push(element);
+    }
+  });
+
+  if (myListResult) {
+    res.jsonp(myListResult);
   } else {
     res
       .status(400)

@@ -16,6 +16,7 @@ import {
   uploadFileHandler,
   uploadFilesHandler,
   getInforOpenCharkraHandler,
+  getOpeningClassInfoHandler,
 } from "./src/rest.js";
 import socketHandler from "./src/socket-io.js";
 
@@ -93,6 +94,10 @@ app.post("/info-open-charkra", (req, res) => {
   getInforOpenCharkraHandler(db, req, res);
 });
 
+// List infor Opening class request
+app.post("/openingClassInfor", (req, res) => {
+  getOpeningClassInfoHandler(db, req, res);
+});
 // Access control
 app.use((req, res, next) => {
   const protectedResources = db.data.protectedResources;
