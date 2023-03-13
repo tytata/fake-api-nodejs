@@ -13,7 +13,7 @@
       "PATCH",
       "DELETE"
     ],
-    "primaryNotice": [
+    "primaryClassNotications": [
       "POST",
       "PUT",
       "PATCH",
@@ -98,11 +98,31 @@
       "modifiedAt": 1615796160000
     }
   ],
-  "primaryNotice": [
+  "primaryClassNotications": [
     {
       "id": 1,
       "title": "Lớp sơ cấp x ngày",
-      "description": "VHJ1bmcgVMOibSBExrDhu6FuZyBTaW5oIHRodeG7mWMgVmnhu4duIE5naGnDqm4gQ+G7qXUgJiDhu6huZyBE4bulbmcgVGnhu4FtIE7Eg25nIENvbiBOZ8aw4budaSwNCiAgICAgIEJhbiBRdeG6o24gTMO9IFRoaeG7gW4gxJDGsOG7nW5nIE5o4bqldCBUw6JtIFRow7RuZyBiw6FvOg0KICAgICAgTOG7m3AgVGhp4buBbiBzxqEgY+G6pXAgb25saW5lICh0cuG7sWMgdHV54bq/bikgdGjDtG5nIHF1YSBjw7RuZyBj4bulIChaT09NKSBuaMawIHNhdToNCiAgICAgIEzhu5twOiBTxqEgY+G6pXAgMS5udW1iZXJPZkNsYXNzICgwMyBuZ8OgeSkNCiAgICAgIFRo4budaSBnaWFuIGThu7Ega2nhur9uOiANCiAgICAgIEtoYWkgZ2nhuqNuZzogb3BlbmluZ1RpbWUgbmfDoHkgT1BFTklOR19EQVRFDQogICAgICANCiAgICAgIEjhu41jIFRoaeG7gW46DQogICAgICAobGVhcm5pbmdTdGFydFRpbWUgxJHhur9uIGxlYXJuaW5nRW5kVGltZSkgVOG7qyBuZ8OgeSBMRUFSTklOR19TVEFSVERBVEUgxJHhur9uIG5nw6B5IExFQVJOSU5HX0VORERBVEUNCiAgICAgIA0KICAgICAg4p2X4p2XIFRo4budaSBnaWFuIMSRxINuZyBrw706IHThu6sgbmfDoHkgcmEgdGjDtG5nIGLDoW8gY2hvIMSR4bq/biByZWdpc3RyeUJlZm9yZVRpbWUgbmfDoHkgUkVHSVNUUllfQkVGT1JFLiBOaOG7r25nIGjhu41jIHZpw6puIMSRxINuZyBrw70gc2F1IHJlZ2lzdHJ5QmVmb3JlVGltZSBuZ8OgeSBSRUdJU1RSWV9CRUZPUkUgc+G6vSDEkcaw4bujYyBz4bqvcCB44bq/cCBo4buNYyBraG/DoSBzYXUuDQogICAgICANCiAgICAgIOKdl+Kdl0zGsHUgw706IFRoYW0gZ2lhIFpPT00gdHLGsOG7m2MgMTUgcGjDunQgxJHhu4Mg4buVbiDEkeG7i25oIGNo4buXIG5n4buTaSwgxJFp4buDbSBkYW5oIHbDoCDEg24gbeG6t2MgTOG7i2NoIFPhu7Ega2hpIHRoYW0gZ2lhIEzhu5twIEjhu41jIQ0KICAgICAg4p2X4p2XTeG7jWkgdGjhuq9jIG3huq9jIHbDoCDEkcSDbmcga8O9IHbhu4EgbOG7m3AgaOG7jWMgdnVpIGzDsm5nIGxpw6puIGjhu4c6DQogICAgICBaYWxvOiBaQUxPX0NPTlRBQ1QNCiAgICAgIOKdl+KdlyBM4bubcCBo4buNYyBob8OgbiB0b8OgbiBtaeG7hW4gcGjDrS4NCiAgICAgIOKdl+KdlyBIxrDhu5tuZyBk4bqrbiBz4butIGThu6VuZyBab29tIGLhurFuZyDEkWnhu4duIHRob+G6oWkgxJHhu4MgdGhhbSBnaWEgbOG7m3AgaOG7jWM6DQogICAgICB0csOqbiDEkWnhu4duIHRob+G6oWk6DQogICAgICBodHRwczovL3lvdXR1LmJlL1NhNDFpLWJFcTVrDQogICAgICB0csOqbiBtw6F5IHTDrW5oOg0KICAgICAgaHR0cHM6Ly95b3V0dS5iZS9nLWczVEl6Um5OVQ==",
+      "description": "Trung Tâm Dưỡng Sinh thuộc Viện Nghiên Cứu & Ứng Dụng Tiềm Năng Con Người,
+Ban Quản Lý Thiền Đường Nhất Tâm Thông báo:
+Lớp Thiền sơ cấp online (trực tuyến) thông qua công cụ (ZOOM) như sau:
+Lớp: Sơ cấp 1.numberOfClass (03 ngày)
+Thời gian dự kiến: 
+Khai giảng: openingTime ngày OPENING_DATE
+
+Học Thiền:
+(learningStartTime đến learningEndTime) Từ ngày LEARNING_STARTDATE đến ngày LEARNING_ENDDATE
+
+❗❗ Thời gian đăng ký: từ ngày ra thông báo cho đến registryBeforeTime ngày REGISTRY_BEFORE. Những học viên đăng ký sau registryBeforeTime ngày REGISTRY_BEFORE sẽ được sắp xếp học khoá sau.
+
+❗❗Lưu ý: Tham gia ZOOM trước 15 phút để ổn định chỗ ngồi, điểm danh và ăn mặc Lịch Sự khi tham gia Lớp Học!
+❗❗Mọi thắc mắc và đăng ký về lớp học vui lòng liên hệ:
+Zalo: ZALO_CONTACT
+❗❗ Lớp học hoàn toàn miễn phí.
+❗❗ Hướng dẫn sử dụng Zoom bằng điện thoại để tham gia lớp học:
+trên điện thoại:
+https://youtu.be/Sa41i-bEq5k
+trên máy tính:
+https://youtu.be/g-g3TIzRnNU",
       "description_on": "Ban Quản Lý Thiền Đường Nhất Tâm mở Lớp Thiền sơ cấp 1.22 online (trực tuyến) thông qua công cụ (ZOOM) vào ngày 16/02/2023 như sau:",
 	  "numberOfClass":22,
 	  "openingDate":"",
