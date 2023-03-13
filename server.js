@@ -17,6 +17,7 @@ import {
   uploadFilesHandler,
   getInforOpenCharkraHandler,
   getOpeningClassInfoHandler,
+  createPrimaryNoticeHandler,
 } from "./src/rest.js";
 import socketHandler from "./src/socket-io.js";
 
@@ -98,6 +99,12 @@ app.post("/info-open-charkra", (req, res) => {
 app.post("/openingClassInfor", (req, res) => {
   getOpeningClassInfoHandler(db, req, res);
 });
+
+// create Primary Notice
+app.post("/createPrimaryNotice", (req, res) => {
+  createPrimaryNoticeHandler(db, req, res);
+});
+
 // Access control
 app.use((req, res, next) => {
   const protectedResources = db.data.protectedResources;

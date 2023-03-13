@@ -251,3 +251,47 @@ export const socketEmit = (io, req, res) => {
   io.emit("socket-emit", req.body);
   res.jsonp({ msg: "Message sent over websocket connection" });
 };
+
+export const createPrimaryNoticeHandler = (db, req, res) => {
+  // const { username, email, password } = req.body;
+  const primaryNotices = db.data.primaryNotice;
+
+  // if (!password && (!email || !username)) {
+  //   res.status(400).jsonp({ message: "Please input all required fields!" });
+  //   return;
+  // }
+
+  // const existUsername = users.find(
+  //   (user) => username && user.username === username
+  // );
+
+  // if (existUsername) {
+  //   res.status(400).jsonp({
+  //     message: "The username already exists. Please use a different username!",
+  //   });
+  //   return;
+  // }
+
+  // const existEmail = users.find((user) => email && user.email === email);
+
+  // if (existEmail) {
+  //   res.status(400).jsonp({
+  //     message:
+  //       "The email address is already being used! Please use a different email!",
+  //   });
+  //   return;
+  // }
+
+  let maxId = 0;
+  for (let u of primaryNotices) {
+    if (u.id > maxId) {
+      maxId = u.id;
+    }
+  }
+  const primaryNotice = { id: maxId + 1, ...req.body };
+
+  primaryNotices.push(primaryNotice);
+  db.write();
+
+  res.jsonp(primaryNotice);
+};
