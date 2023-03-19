@@ -295,3 +295,38 @@ export const createPrimaryNoticeHandler = (db, req, res) => {
 
   res.jsonp(primaryNotice);
 };
+
+export const getClassNoticeHandler = (db, req, res) => {
+  const { type } = req.body;
+
+  const myListResult = [];
+  db.data.classNotice.forEach((element) => {
+    if (element.type === type) {
+      myListResult.push(element);
+    }
+  });
+
+  if (myListResult) {
+    res.jsonp(myListResult);
+  } else {
+    res.status(400).jsonp({ message: "not found class notice!" });
+  }
+};
+
+export const updateUserEnrollHandler = (db, req, res) => {
+  // const { username, email, password } = req.body;
+  const { id, enrollId, classType, coachId } = req.body;
+  const userEnroll = db.data.userEnroll;
+  // const { id } = req.param;
+
+  let userRes;
+  for (let u of userEnroll) {
+    if (u.id == id && u.enrollId == enrollId && u.classType == classType) {
+      u.coachId = coachId;
+      userRes = u;
+    }
+  }
+  db.write();
+
+  res.jsonp(userRes);
+};

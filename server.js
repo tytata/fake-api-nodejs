@@ -18,6 +18,8 @@ import {
   getInforOpenCharkraHandler,
   getOpeningClassInfoHandler,
   createPrimaryNoticeHandler,
+  getClassNoticeHandler,
+  updateUserEnrollHandler,
 } from "./src/rest.js";
 import socketHandler from "./src/socket-io.js";
 
@@ -90,19 +92,39 @@ app.post("/upload-file", uploadFileHandler);
 // Upload multiple files
 app.post("/upload-files", uploadFilesHandler);
 
-// List infor Open charkra request
+/**
+ * List infor Open charkra request
+ */
 app.post("/info-open-charkra", (req, res) => {
   getInforOpenCharkraHandler(db, req, res);
 });
 
-// List infor Opening class request
+/**
+ * List infor Opening class request
+ */
 app.post("/openingClassInfor", (req, res) => {
   getOpeningClassInfoHandler(db, req, res);
 });
 
-// create Primary Notice
+/**
+ * create Primary Notice
+ */
 app.post("/createPrimaryNotice", (req, res) => {
   createPrimaryNoticeHandler(db, req, res);
+});
+
+/**
+ * get class notice
+ */
+app.post("/classNotice", (req, res) => {
+  getClassNoticeHandler(db, req, res);
+});
+
+/**
+ * update user enroll class
+ */
+app.put("/userEnroll/update", (req, res) => {
+  updateUserEnrollHandler(db, req, res);
 });
 
 // Access control
