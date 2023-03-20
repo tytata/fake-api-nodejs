@@ -102,7 +102,7 @@ app.post("/info-open-charkra", (req, res) => {
 /**
  * List infor Opening class request
  */
-app.post("/openingClassInfor", (req, res) => {
+app.post("/opening-class-inf", (req, res) => {
   getOpeningClassInfoHandler(db, req, res);
 });
 

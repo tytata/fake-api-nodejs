@@ -329,3 +329,12 @@ Private endpoints require a valid Token to be included in the header of the requ
   ```
 
   ...
+
+"protectedResources": {
+    "users": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    "products": ["POST", "PUT", "PATCH", "DELETE"],
+    "classNotice": ["POST", "PUT", "PATCH", "DELETE"],
+    "userEnroll": ["GET", "PUT", "PATCH", "DELETE"],
+    "class": ["POST", "PUT", "PATCH", "DELETE"],
+    "coacher": ["POST", "PUT", "PATCH", "DELETE"]
+  },
